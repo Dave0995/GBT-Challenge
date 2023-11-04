@@ -1,7 +1,8 @@
 options:
   logging: CLOUD_LOGGING_ONLY
 steps:
-- name: 'bash'
-  script: |
-    #!/usr/bin/env bash
-    echo "Hello World! This is ${_ENV} environment"
+- name: 'gcr.io/cloud-builders/bash'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - 'env'  # Imprime todas las variables de entorno
