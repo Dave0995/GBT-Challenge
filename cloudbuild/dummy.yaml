@@ -2,6 +2,8 @@ options:
   logging: CLOUD_LOGGING_ONLY
 steps:
 - name: 'bash'
+  env:
+  - 'ENV=${_ENV}'
   script: |
     #!/usr/bin/env bash
-    -c env
+    echo "Hello World! This is $ENV environment"
