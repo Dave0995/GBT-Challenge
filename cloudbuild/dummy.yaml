@@ -4,4 +4,4 @@ steps:
 - name: 'bash'
   script: |
     #!/usr/bin/env bash
-    echo "Hello World! This is $_ENV environment"
+    echo "Hello World! This is ${_ENV} environment"
