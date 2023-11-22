@@ -6,4 +6,4 @@ steps:
   - 'ENV=${_ENV}'
   script: |
     #!/usr/bin/env bash
-    echo "Hello World! This is $ENV environment"
+    echo "Hello World! This is $ENV environment and confirm ${_ENV}"
