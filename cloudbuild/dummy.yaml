@@ -3,7 +3,7 @@ options:
 steps:
 - name: 'bash'
   env:
-  - 'ENV=${_ENV}'
+  - 'ENV=${_ENVIRONMENT}'
   script: |
     #!/usr/bin/env bash
     echo "Hello World! This is $ENV environment and confirm ${_ENV}"
